@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    android:gravity="center|top"
+    tools:context=".ProductsActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_marginTop="124dp"
+        android:textAlignment="center"
+        android:text="@string/welcome"/>
+
+<LinearLayout
+    android:layout_marginTop="32dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:layout_marginVertical="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:id="@+id/whiteWineBtn"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/homepage_white"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        </ImageView>
+        <TextView
+            android:text="@string/white_wine"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/redWineBtn"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/homepage_red"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        </ImageView>
+
+        <TextView
+            android:text="@string/red_wine"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginVertical="8dp"
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/bubbleWineBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/homepage_sparkling"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bubble_wine"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/roseWineBtn"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/homepage_rose"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        </ImageView>
+        <TextView
+            android:text="@string/rose_wine"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/goToCart"
+        android:layout_margin="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cart"/>
+
+</LinearLayout>

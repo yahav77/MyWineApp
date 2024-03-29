@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">New1</string>
+    <string name="red_wine">יין אדום</string>
+    <string name="white_wine">יין לבן</string>
+    <string name="rose_wine">יין רוזה</string>
+    <string name="bubble_wine">יין מבעבע</string>
+    <string name="welcome">דף הבית</string>
+    <string name="checkout">Cart\n</string>
+</resources>

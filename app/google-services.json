@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "230301242794",
+    "project_id": "ort55-de482",
+    "storage_bucket": "ort55-de482.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230301242794:android:cebf09ab6ffa210b8187d3",
+        "android_client_info": {
+          "package_name": "com.example.new1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6C0_Ah0vOqQbjeJi3FUnjRkYDoKXPm0g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
