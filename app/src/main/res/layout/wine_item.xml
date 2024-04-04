@@ -29,7 +29,7 @@
             android:layoutDirection="rtl"
             android:padding="16dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/wineImageView"
                 android:layout_width="120dp"
@@ -43,7 +43,7 @@
             android:orientation="vertical"
             android:layout_marginHorizontal="16dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:text="Wine name"

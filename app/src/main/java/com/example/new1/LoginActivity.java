@@ -31,7 +31,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
 
         etLoginEmail =findViewById(R.id.etLoginEmail);
+        etLoginEmail.setText("abcd@gmail.com");
         etLoginPassword =findViewById(R.id.etLoginPassword);
+        etLoginPassword.setText("123456");
         btnLogin =findViewById(R.id.btnLogin);
 
         btnLogin.setOnClickListener(this);

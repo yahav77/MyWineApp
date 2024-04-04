@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.new1"
-        minSdk = 34
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -42,4 +42,6 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation ("com.google.android.libraries.places:places:3.1.0")
+    implementation ("com.google.android.gms:play-services-maps:18.1.0")
 }

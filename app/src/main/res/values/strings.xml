@@ -6,4 +6,6 @@
     <string name="bubble_wine">יין מבעבע</string>
     <string name="welcome">דף הבית</string>
     <string name="checkout">Cart\n</string>
+    <string name="you_address">Your address</string>
+    <string name="save">Save</string>
 </resources>

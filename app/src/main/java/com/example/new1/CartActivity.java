@@ -1,7 +1,11 @@
 package com.example.new1;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.location.Address;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +14,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -30,6 +36,16 @@ import java.util.List;
 
 public class CartActivity extends AppCompatActivity implements CartAdapter.OnRemove {
 
+
+    private EditText addressEt;
+
+    private ActivityResultLauncher<Intent> mapLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(), result->{
+                if (result.getResultCode() == Activity.RESULT_OK){
+                    Address address  = (Address) result.getData().getParcelableExtra("address");
+                    addressEt.setText(address.getAddressLine(0));
+                }
+            });
 
     @Override
     public void onRemoveOne(CartItem item) {
@@ -71,7 +87,13 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.OnRem
             EditText cardNumberEt = checkoutView.findViewById(R.id.cardNumberTV);
             EditText expirationEt = checkoutView.findViewById(R.id.expirationDateTv);
             EditText ccvEt = checkoutView.findViewById(R.id.ccvTv);
-            EditText addressEt = checkoutView.findViewById(R.id.addressTv);
+            addressEt = checkoutView.findViewById(R.id.addressTv);
+            addressEt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mapLauncher.launch(new Intent(CartActivity.this, MapActivity.class));
+                }
+            });
             final double finalTotal = total;
 
             setButton(BUTTON_POSITIVE, "Checkout", new OnClickListener() {
@@ -157,6 +179,8 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.OnRem
         setContentView(R.layout.cart_activity);
         rv = findViewById(R.id.rvWines);
         Button checkoutBtn = findViewById(R.id.checkoutBtn);
+        Button backBT = findViewById(R.id.backBtn);
+        backBT.setOnClickListener(view -> finish());
 
         rv.setLayoutManager(new LinearLayoutManager(this));
         FirebaseFirestore.getInstance()

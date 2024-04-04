@@ -34,6 +34,15 @@ public class WineActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products_list);
+        counterTV = findViewById(R.id.counter);
+        FirebaseFirestore.getInstance()
+                .collection("orders")
+                .document(FirebaseAuth.getInstance().getUid())
+                .collection("orders")
+                .get()
+                .addOnSuccessListener(queryDocumentSnapshots -> {
+                    counterTV.setText(String.valueOf(queryDocumentSnapshots.size()));
+                });
         rvWines = findViewById(R.id.rvWines);
         String type = getIntent().getStringExtra(TYPE_ARG);
         counterTV = findViewById(R.id.counter);
