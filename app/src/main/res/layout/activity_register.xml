@@ -1,81 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".RegisterActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register Activity"
-        android:textSize="30dp"/>
+    tools:context="com.example.activities.RegisterActivity">
 
-    <ImageView
-        android:id="@+id/profileImg"
-        android:layout_marginVertical="16dp"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/baseline_person_2_24"/>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
         android:gravity="center">
 
-        <Button
-            android:id="@+id/camera"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableRight="@drawable/baseline_add_a_photo_24"
-            android:text="Camera"/>
+            android:text="Register Activity"
+            android:textStyle="bold"
+            android:textColor="@color/dark_wine"
+            android:textSize="30dp"/>
 
+        <ImageView
+            android:id="@+id/profileImg"
+            android:layout_marginVertical="16dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/baseline_person_2_24"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/quantum_googred"
+                android:drawableRight="@drawable/baseline_add_a_photo_24"
+                android:text="Camera"/>
+
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/quantum_googred"
+                android:drawableRight="@drawable/baseline_gallery_24"
+                android:text="Gallery"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Enter your email"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/etRegisterEmail"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Enter your password"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/etRegisterPassword"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Enter your name"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/etRegisterName"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Enter your Age"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/etRegisterAge"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="Enter your phone"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/etRegisterPhone"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/gallery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:drawableRight="@drawable/baseline_gallery_24"
-            android:text="Gallery"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
+            android:text="Click to Register"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/quantum_googred"
+            android:id="@+id/btnRegister"/>
 
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter your email"
-        android:id="@+id/etRegisterEmail"/>
+    </LinearLayout>
 
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter your password"
-        android:id="@+id/etRegisterPassword"/>
-
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter your name"
-        android:id="@+id/etRegisterName"/>
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter your Age"
-        android:id="@+id/etRegisterAge"/>
-
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter your phone"
-        android:id="@+id/etRegisterPhone"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click to Register"
-        android:id="@+id/btnRegister"/>
-
-</LinearLayout>
+</ScrollView>

@@ -8,4 +8,6 @@
     <string name="checkout">Cart\n</string>
     <string name="you_address">Your address</string>
     <string name="save">Save</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

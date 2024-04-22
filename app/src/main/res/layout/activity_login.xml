@@ -5,28 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".LoginActivity">
+    android:padding="16dp"
+    tools:context="com.example.activities.LoginActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login to Firebase"
-        android:textSize="24dp"/>
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/homescreen"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="top"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/image00"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="top"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:hint="Enter your email"
-        android:id="@+id/etLoginEmail"/>
-    <EditText
-        android:layout_width="250dp"
+        android:layout_gravity="center_vertical"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:hint="Enter your password"
-        android:id="@+id/etLoginPassword"/>
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Click to Login"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/quantum_googred"
         android:id="@+id/btnLogin"/>
 
 </LinearLayout>

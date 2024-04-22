@@ -1,4 +1,4 @@
-package com.example.new1;
+package com.example.models;
 
 public class Wine {
     private String name;

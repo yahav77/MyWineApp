@@ -1,4 +1,4 @@
-package com.example.new1;
+package com.example.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,17 +10,18 @@ import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.new1.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
-    EditText etLoginEmail, etLoginPassword;
+    TextInputEditText etLoginEmail, etLoginPassword;
     Button btnLogin;
     FirebaseAuth fbAuth;
 
@@ -31,9 +32,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
 
         etLoginEmail =findViewById(R.id.etLoginEmail);
-        etLoginEmail.setText("abcd@gmail.com");
         etLoginPassword =findViewById(R.id.etLoginPassword);
-        etLoginPassword.setText("123456");
         btnLogin =findViewById(R.id.btnLogin);
 
         btnLogin.setOnClickListener(this);
@@ -54,6 +53,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                     Intent intent = new Intent(LoginActivity.this,
                                             ProductsActivity.class);
                                     startActivity(intent);
+                                    finish();
                                 } else
                                     Toast.makeText(LoginActivity.this,
                                             "Email or Password incorrect",

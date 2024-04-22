@@ -13,31 +13,31 @@
         android:theme="@style/Theme.New1"
         tools:targetApi="31">
         <activity
-            android:name=".UserDetailsActivity"
+            android:name="com.example.activities.UserDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".WineActivity"
+            android:name="com.example.activities.WineActivity"
             android:exported="false" />
         <activity
-            android:name=".User"
+            android:name="com.example.models.User"
             android:exported="false" />
         <activity
-            android:name=".CartActivity"
+            android:name="com.example.activities.CartActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductsActivity"
+            android:name="com.example.activities.ProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.example.activities.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.example.activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MapActivity"
+            android:name="com.example.activities.MapActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

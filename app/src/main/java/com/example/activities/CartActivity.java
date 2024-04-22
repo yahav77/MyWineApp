@@ -1,10 +1,9 @@
-package com.example.new1;
+package com.example.activities;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.location.Address;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -23,6 +22,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.adapters.CartAdapter;
+import com.example.models.CartItem;
+import com.example.models.Order;
+import com.example.new1.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;

@@ -1,4 +1,6 @@
-package com.example.new1;
+package com.example.models;
+
+import com.example.new1.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +15,7 @@ public class Wines {
 
     private static  List<Wine> white(){
         List<Wine> lst = new ArrayList<>();
-        lst.add(new Wine("Tokaji",150,"750ml",2015,R.drawable.white_one));
+        lst.add(new Wine("Tokaji",150,"750ml",2015, R.drawable.white_one));
         lst.add(new Wine("Riesling White",150,"750ml",2015,R.drawable.white_two));
         lst.add(new Wine("Chardonna",70,"750ml",2017,R.drawable.white_three));
         lst.add(new Wine("Pinot grigio",80,"750ml",2020,R.drawable.white_four));

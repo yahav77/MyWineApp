@@ -1,4 +1,4 @@
-package com.example.new1;
+package com.example.activities;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -17,14 +17,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.new1.R;
+import com.example.models.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -36,7 +38,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
-    EditText etRegisterEmail,etRegisterPassword,etRegisterName,etRegisterAge,etRegisterPhone;
+    TextInputEditText etRegisterEmail,etRegisterPassword,etRegisterName,etRegisterAge,etRegisterPhone;
     Button btnRegister, btnCamera, btnGallery;
 
     ImageView profileImg;

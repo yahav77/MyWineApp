@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F1F1F1"
-    tools:context=".ProductsActivity">
+    tools:context="com.example.activities.ProductsActivity">
 
  <LinearLayout
     android:gravity="center"
@@ -78,5 +78,6 @@
         android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:id="@+id/backBtn"
+        android:backgroundTint="@color/quantum_googred"
         android:layout_height="wrap_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>

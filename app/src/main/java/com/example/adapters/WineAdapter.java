@@ -1,4 +1,4 @@
-package com.example.new1;
+package com.example.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,12 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QuerySnapshot;
+import com.example.new1.OnItemClickListener;
+import com.example.new1.R;
+import com.example.models.Wine;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
