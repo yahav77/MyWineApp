@@ -19,9 +19,6 @@
             android:name="com.example.activities.WineActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.models.User"
-            android:exported="false" />
-        <activity
             android:name="com.example.activities.CartActivity"
             android:exported="false" />
         <activity
@@ -49,6 +46,8 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCrgVzNMKn_8URKt4rXS02GkzEaaJJZ1jw" />
+
+        <service android:name="com.example.services.MusicService"/>
     </application>
 
 </manifest>

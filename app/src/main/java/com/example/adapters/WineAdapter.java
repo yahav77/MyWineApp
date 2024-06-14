@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.new1.OnItemClickListener;
+import com.example.listeners.OnItemClickListener;
 import com.example.new1.R;
 import com.example.models.Wine;
 import com.squareup.picasso.Picasso;

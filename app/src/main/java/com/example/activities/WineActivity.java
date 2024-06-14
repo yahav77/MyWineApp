@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.models.CartItem;
-import com.example.new1.OnItemClickListener;
+import com.example.listeners.OnItemClickListener;
 import com.example.new1.R;
 import com.example.models.Wine;
 import com.example.adapters.WineAdapter;

@@ -11,6 +11,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.bumptech.glide.Glide;
 import com.example.models.User;
+import com.example.services.MusicService;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 
@@ -123,6 +124,8 @@ public class ProductsActivity extends AppCompatActivity implements NavigationVie
                     }
                 });
 
+        startService(new Intent(this, MusicService.class));
+
     }
 
     @Override
@@ -147,6 +150,11 @@ public class ProductsActivity extends AppCompatActivity implements NavigationVie
         }
 
         return true;
+    }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        stopService(new Intent(this, MusicService.class));
     }
 }
