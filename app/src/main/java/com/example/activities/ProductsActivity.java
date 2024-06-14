@@ -31,8 +31,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class ProductsActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
-    LinearLayout redWineBtn,whiteWineBtn,roseWineBtn,bubbleWineBtn;
-    DrawerLayout drawerLayout;
+    private LinearLayout redWineBtn,whiteWineBtn,roseWineBtn,bubbleWineBtn;
+    private DrawerLayout drawerLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

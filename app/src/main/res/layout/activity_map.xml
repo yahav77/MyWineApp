@@ -12,18 +12,24 @@
         android:layout_height="match_parent"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
-    <SearchView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/search_view"
-        android:queryHint="@string/you_address"/>
+        android:layout_height="wrap_content">
+        <SearchView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_view"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:queryHint="@string/you_address"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginStart="8dp"
+            android:id="@+id/save"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/save"
-        android:layout_gravity="bottom"
-        android:layout_margin="16dp"
-        android:id="@+id/save"/>
+    </LinearLayout>
+
 
 </FrameLayout>

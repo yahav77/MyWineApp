@@ -38,14 +38,13 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
-    TextInputEditText etRegisterEmail,etRegisterPassword,etRegisterName,etRegisterAge,etRegisterPhone;
-    Button btnRegister, btnCamera, btnGallery;
 
-    ImageView profileImg;
-    Bitmap imageBitmap;
-
-    String imageUrl;
-    FirebaseAuth fbAuth;
+    private TextInputEditText etRegisterEmail,etRegisterPassword,etRegisterName,etRegisterAge,etRegisterPhone;
+    private Button btnRegister, btnCamera, btnGallery;
+    private ImageView profileImg;
+    private Bitmap imageBitmap;
+    private String imageUrl;
+    private FirebaseAuth fbAuth;
 
     private ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(), result->{

@@ -21,9 +21,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextInputEditText etLoginEmail, etLoginPassword;
-    Button btnLogin;
-    FirebaseAuth fbAuth;
+    private TextInputEditText etLoginEmail, etLoginPassword;
+    private Button btnLogin;
+    private FirebaseAuth fbAuth;
 
     @SuppressLint("MissingInflatedId")
     @Override
