@@ -14,11 +14,11 @@ public class MusicService extends Service {
 
     private MediaPlayer mediaPlayer;
 
-
     @Override
     public void onCreate() {
         super.onCreate();
         mediaPlayer = MediaPlayer.create(this, R.raw.baground_music);
+        mediaPlayer.setLooping(true);
     }
 
     @Override
